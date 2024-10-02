@@ -83,10 +83,6 @@ ubg235Server= function() {
   if (need_log) {
     loadJS(`https://ubg235.pages.dev/logs/?w=${screenWidth}&h=${screenHeight}&l=${encodeURIComponent(frameURL)}&p=${encodeURIComponent(webURL)}`, false);
   }
-  
-  
-  console.log("isInFrame", isInFrame());
-  console.log("isBotBrowser", isBotBrowser());
 }
 
 ubg235Server();
