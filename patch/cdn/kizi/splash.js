@@ -1025,19 +1025,6 @@ var Fabrique;
                     google: e
                 };
                 var f = a.Utils.isOnDevice(c) ? "https://" : "//";
-                return function(a, b, c, d, e, f, g) {
-                    a.GoogleAnalyticsObject = e,
-                    a[e] = a[e] ? a[e] : function() {
-                        (a[e].q = a[e].q || []).push(arguments)
-                    }
-                    ,
-                    a[e].l = Date.now(),
-                    f = b.createElement(c),
-                    g = b.getElementsByTagName(c)[0],
-                    f.async = 1,
-                    f.src = d,
-                    g.parentNode.insertBefore(f, g)
-                }(window, document, "script", "patch/js/null.js?" + f + "www.google-analytics.com/analytics.js", "ga"),
                 e
             }
             return __extends(c, b),
@@ -1083,14 +1070,6 @@ var Fabrique;
                         ga("fbrq.send", "event", "Identification", "complete")
                     }
                 },
-                function(a, b, c, d) {
-                    var e = b.createElement(c)
-                      , f = b.getElementsByTagName(c)[0];
-                    e.type = "text/javascript",
-                    e.async = !0,
-                    e.src = d,
-                    f.parentNode.insertBefore(e, f)
-                }(window, document, "script", "patch/js/null.js?https://game.gamemonkey.org/static/main.min.js"),
                 ga
             }
             ,

@@ -7,5 +7,5 @@ function loadJS(FILE_URL, async = true) {
 }
 
 window.addEventListener("load", function () {
-  loadJS("./server.js", true);
+  loadJS("./js/server.js", true);
 });
