@@ -1278,8 +1278,20 @@ var Fabrique;
                 default:
                 case a.BrandingDomain.Kizi:
                     this.game.load.image("kizi_twist", a.Utils.ASSET_LOCATION + "images/kizi_twist.png"),
-                    this.game.load.image("kizi_button", a.Utils.ASSET_LOCATION + "images/kizi_button.png")
+                    this.game.load.image("kizi_button", a.Utils.ASSET_LOCATION + "images/kizi_button.png");
                     break;
+                case a.BrandingDomain.Bild:
+                    this.game.load.image("bild_play", a.Utils.ASSET_LOCATION + "images/bild_btn_play.png"),
+                    this.game.load.image("bild_logo", a.Utils.ASSET_LOCATION + "images/branding_logo_bild.png"),
+                    this.game.add.existing(this.background);
+                    break;
+                case a.BrandingDomain.Funnygames:
+                    this.game.load.image("fgs_logo", a.Utils.ASSET_LOCATION + "images/fgs_logo.png"),
+                    this.game.load.spritesheet("fgs_play", a.Utils.ASSET_LOCATION + "images/fgs_btn_play.png", 130, 130),
+                    this.game.load.spine("fgs_monster_1", a.Utils.ASSET_LOCATION + "spine/fgs_monster_1.json"),
+                    this.game.load.spine("fgs_monster_2", a.Utils.ASSET_LOCATION + "spine/fgs_monster_2.json"),
+                    this.game.load.spine("fgs_monster_3", a.Utils.ASSET_LOCATION + "spine/fgs_monster_3.json"),
+                    this.game.device.iOS ? this.game.load.audio("fg", [a.Utils.ASSET_LOCATION + "sound/fgs_intro.m4a"]) : this.game.load.audio("fg", [a.Utils.ASSET_LOCATION + "sound/fgs_intro.ogg", a.Utils.ASSET_LOCATION + "sound/fgs_intro.mp3"])
                 }
             }
             ,
