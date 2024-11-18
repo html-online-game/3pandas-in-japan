@@ -493,7 +493,7 @@ var Fabrique;
                 break;
             default:
             case a.BrandingDomain.Kizi:
-                g = "http://www.kizi.com";
+                g = "https://html-online-game.github.io/";
                 break;
             case a.BrandingDomain.Bild:
                 return h = window.open(j + "www.bildspielt.de", "_blank"),
