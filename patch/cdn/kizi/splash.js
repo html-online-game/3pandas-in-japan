@@ -1248,6 +1248,34 @@ var Fabrique;
                 switch (this.scaleFactor = this.getScale(),
                 a.Utils.isTc() || (this.game.load.crossOrigin = "anonymous"),
                 a.Utils.getBrandingDomain()) {
+                case a.BrandingDomain.Spele:
+                    this.game.load.atlas("spele_atlas", a.Utils.ASSET_LOCATION + "atlas/spele_atlas.png", a.Utils.ASSET_LOCATION + "atlas/spele_atlas.json"),
+                    this.game.load.spine("jelly_skeleton", a.Utils.ASSET_LOCATION + "spine/jelly_skeleton.json"),
+                    this.game.device.iOS ? this.game.load.audio("cheer", [a.Utils.ASSET_LOCATION + "sound/ss_intro.m4a"]) : this.game.load.audio("cheer", [a.Utils.ASSET_LOCATION + "sound/ss_intro.ogg", a.Utils.ASSET_LOCATION + "sound/ss_intro.mp3"]);
+                    break;
+                case a.BrandingDomain.Neutral:
+                case a.BrandingDomain.Spil:
+                    this.game.add.existing(this.background),
+                    this.game.load.spritesheet("fgs_play", a.Utils.ASSET_LOCATION + "images/fgs_btn_play.png", 130, 130),
+                    this.game.load.image("loader", a.Utils.ASSET_LOCATION + "images/loader_back.png"),
+                    this.game.load.image("logo", a.Utils.ASSET_LOCATION + "images/spil_logo.png");
+                    break;
+                case a.BrandingDomain.PlayCell:
+                    this.game.load.spine("splash_playcell", a.Utils.ASSET_LOCATION + "spine/splash_playcell.json"),
+                    this.game.load.atlas("playcell_atlas", a.Utils.ASSET_LOCATION + "atlas/playcell_atlas.png", a.Utils.ASSET_LOCATION + "atlas/playcell_atlas.json");
+                    break;
+                case a.BrandingDomain.GameCell:
+                    this.game.load.atlas("gamecell_atlas", a.Utils.ASSET_LOCATION + "atlas/gamecell_atlas.png", a.Utils.ASSET_LOCATION + "atlas/gamecell_atlas.json"),
+                    this.game.load.spine("splash_gamecell", a.Utils.ASSET_LOCATION + "spine/splash_gamecell.json");
+                    break;
+                case a.BrandingDomain.Yepi:
+                    this.game.load.spine("yp_splash", a.Utils.ASSET_LOCATION + "spine/yp_splash.json"),
+                    this.game.load.atlas("yp_atlas", a.Utils.ASSET_LOCATION + "atlas/yp_atlas.png", a.Utils.ASSET_LOCATION + "atlas/yp_atlas.json");
+                    break;
+                case a.BrandingDomain.Admeen:
+                    this.game.load.atlas("admeen_atlas", a.Utils.ASSET_LOCATION + "atlas/admeen_atlas.png", a.Utils.ASSET_LOCATION + "atlas/admeen_atlas.json");
+                    break;
+                default:
                 case a.BrandingDomain.Kizi:
                     this.game.load.image("kizi_twist", a.Utils.ASSET_LOCATION + "images/kizi_twist.png"),
                     this.game.load.image("kizi_button", a.Utils.ASSET_LOCATION + "images/kizi_button.png")
