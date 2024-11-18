@@ -1278,7 +1278,9 @@ var Fabrique;
                 default:
                 case a.BrandingDomain.Kizi:
                     this.game.load.image("kizi_twist", a.Utils.ASSET_LOCATION + "images/kizi_twist.png"),
-                    this.game.load.image("kizi_button", a.Utils.ASSET_LOCATION + "images/kizi_button.png");
+                    this.game.load.image("kizi_button", a.Utils.ASSET_LOCATION + "images/kizi_button.png"),
+                    this.game.load.image("kizi_logo", a.Utils.ASSET_LOCATION + "images/kizi_logo.png"),
+                    this.game.load.spine("kizi_skeleton", a.Utils.ASSET_LOCATION + "spine/kizi_skeleton.json");
                     break;
                 case a.BrandingDomain.Bild:
                     this.game.load.image("bild_play", a.Utils.ASSET_LOCATION + "images/bild_btn_play.png"),
